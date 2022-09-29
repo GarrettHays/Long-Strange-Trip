@@ -1,0 +1,7 @@
+<h1>Recent Journal Entries</h1>
+<div class="entires-menu">
+  <a *ngFor="let entry of entries"
+  routerLink="/detail/{{entry.id}}">
+  {{entry.name}}
+</a>
+</div>
