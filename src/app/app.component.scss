@@ -1,0 +1,29 @@
+h1 {
+  margin-bottom: 0;
+}
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  background-color: white;
+  color: #3d3d3d;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  margin: 0.5rem;
+  border-radius: 4px;
+  align-items:baseline;
+  height: 2rem;
+  font-family: 'Lilita One', cursive;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #2d0059;
+}
+nav a:active {
+  background-color: #2d0059;
+  color: white;
+}
