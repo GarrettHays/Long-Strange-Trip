@@ -1,0 +1,9 @@
+<div *ngIf="entry">
+  <h1>{{entry.name | uppercase}}</h1>
+  <div id="entry-name"><span>date: </span>{{entry.date}}</div>
+  <div>
+    <label for="entry-name">Location: </label>
+    <input id="entry-name" [(ngModel)]="entry.name" placeholder="Location"/>
+  </div>
+  <button type="button" (click)="goBack()">go back</button>
+</div>

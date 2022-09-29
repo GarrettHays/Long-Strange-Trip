@@ -1,0 +1,53 @@
+h1 {
+  font-family: 'Lilita One', cursive;
+  color: #333333;
+  font-weight: lighter;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.entry-name {
+  margin-left: 1rem;
+  color: #435960;
+  font-weight: bold;
+}
+
+label {
+  margin-left: 1rem;
+  color: #435960;
+  font-weight: bold;
+}
+input {
+  margin-left: 1rem;
+  font-size: 1em;
+  padding: .5rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 1rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  background-color: white;
+  color: #3d3d3d;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  margin: 0.5rem;
+  border-radius: 4px;
+  align-items:baseline;
+  height: 4rem;
+  font-family: 'Lilita One', cursive;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+button:hover {
+  color: white;
+  background-color: #2d0059;
+}
+button:active {
+  background-color: #2d0059;
+  color: white;
+}
