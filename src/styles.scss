@@ -1,1 +1,165 @@
-/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+h2 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+body {
+  margin: 2em;
+}
+body, input[type="text"], button {
+  color: #333;
+  // font-family: Cambria, Georgia, serif;
+}
+a {
+  background-color: rgb(255, 255, 255);
+  border: solid;
+  border-width: 1px;
+  border-radius: 1rem;
+  border-color: #eb52be;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.1rem;
+  margin-top: 0.5rem;
+}
+a:hover {
+  background-color: #0076a6;
+  color: white;
+}
+a:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+
+/* test */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+/*variable*/
+:root {
+  --main-bg-color: #ebebeb;
+  --title-bg-color: #ffffff;
+  --text-color : #000000;
+}
+
+body{
+  width:100%;
+  height: 80vh;
+  margin:0;
+  padding:0;
+  overflow:scroll;
+  background-color: var(--main-bg-color);
+  background-image: url("https://i.etsystatic.com/12668519/r/il/3cfbdc/3919648258/il_1140xN.3919648258_kali.jpg");
+  animation: breathing 80s ease infinite normal;
+  font-family: 'Lilita One';
+  animation: breathing 80s ease infinite normal;
+  cursor: default;
+}
+.container{
+  background-color: var(--title-bg-color);
+  border: 2px solid;
+  padding: 10px;
+  box-shadow: 20px 20px #2d0059;
+  border-radius: 3rem;
+  position: relative;
+  width: 45%;
+  margin-top: 25rem;
+  padding: 1rem 3rem 5rem;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text h3{
+  text-transform: uppercase;
+  color: #2d0059;
+  font-size:80px;
+  margin: 4rem;
+  padding-bottom: 2rem;
+  font-family: 'Lilita One', cursive;
+  justify-content: center;
+  text-align: center;
+  animation: text-shadow 1.75s ease-in-out infinite;
+}
+
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #FF5768, 
+            0 0 0 #8DD7BF, 
+            0 0 0 #00A5E3, 
+            0 0 0 #FFBF65;
+    }
+
+    20% {  
+        transform: translateY(-10px);
+        text-shadow: 
+            0 0.125px 0 #FF5768, 
+            0 0.25px 0 #8DD7BF, 
+            0 -0.125px 0 #00A5E3, 
+            0 -0.25px 0 #FFBF65;
+    }
+
+    40% {  
+        transform: translateY(5px);
+        text-shadow: 
+            0 -0.0625em 0 #FF5768, 
+            0 -0.125em 0 #8DD7BF, 
+            0 0.0625em 0 #00A5E3, 
+            0 0.125em 0 #FFBF65;
+    }
+    
+   60% {
+        transform: translateY(-0.25px);
+        text-shadow: 
+            0 0.03125em 0 #FF5768, 
+            0 0.0625em 0 #8DD7BF, 
+            0 -0.03125em 0 #00A5E3, 
+            0 -0.0625em 0 #FFBF65;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #FF5768, 
+            0 0 0 #8DD7BF, 
+            0 0 0 #00A5E3, 
+            0 0 0 #FFBF65;
+    }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
