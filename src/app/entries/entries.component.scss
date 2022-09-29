@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.entries {
+  list-style-type: none;
+  width: 50%;
+}
+
+.entries li {
+  display: flex;
+}
+
+.entries a {
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: white;
+  margin: 0.5rem;
+  padding: 0;
+  border-radius: 4px;
+  display: flex;
+  align-items: stretch;
+  height: 3rem;
+}
+
+.entries a:hover {
+  color: white;
+  background-color: #2d0059;
+}
+
+.entries a:active {
+  background-color: #2d0059;
+  color: white;
+}
+
+.entries a.selected {
+  background-color: #ea53bc;
+  color: white;
+}
+
+.entries a.selected:hover {
+  background-color: #ea53bc;
+  color: white;
+}
+
+.entries a.selected:active {
+  background-color: black;
+  color: white;
+}
+
+.entries .badge {
+  display: inline-block;
+  font-family: 'Lilita One', cursive;
+  font-size: medium;
+  font-weight: lighter;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #0076a6;
+  width: 30px;
+  line-height: 1.2em;
+  margin-right: 1rem;
+  border-radius: 3px 0 0 3px;
+}
+
+.entries .name {
+  align-self: center;
+  font-family: 'Lilita One', cursive;
+  font-weight: lighter;
+  font-size: larger;
+}
+
+h1 {
+  font-family: 'Lilita One', cursive;
+  color: #333333;
+  font-weight: lighter;
+  font-size: 40px;
+  margin-left: 10px;
+}
+

@@ -1,0 +1,11 @@
+<h1>Journal Entries</h1>
+
+<ul class="entries">
+  <li *ngFor="let entry of entries">
+    <a routerLink="/detail/{{entry.id}}">
+      <span class="badge">{{entry.id}}</span> 
+      <span class="name">{{entry.name}} - {{entry.date}}</span>
+    </a>
+  </li>
+</ul>
+
