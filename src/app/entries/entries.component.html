@@ -1,11 +1,26 @@
 <h1>Journal Entries</h1>
 
+<div>
+  <h3>Add Entry:</h3>
+  <label for="new-entry">Location: </label>
+  <input id="new-entry" #entryName /> 
+  <br/>
+  <label for="new-entry">Date: </label>
+  <input id="new-entry" #entryDate />
+  <br/>
+  <button type="button" class="add-button" (click)="add({name: entryName.value, date: entryDate.value}); entryName.value=''; entryDate.value=''">
+    Add Entry
+  </button>
+</div>
+
 <ul class="entries">
   <li *ngFor="let entry of entries">
     <a routerLink="/detail/{{entry.id}}">
       <span class="badge">{{entry.id}}</span> 
       <span class="name">{{entry.name}} - {{entry.date}}</span>
     </a>
+    <button type="button" class="delete" title="delete entry"
+    (click)="delete(entry)">x</button>
   </li>
 </ul>
 
