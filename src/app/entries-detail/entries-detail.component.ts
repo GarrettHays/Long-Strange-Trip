@@ -32,4 +32,11 @@ export class EntriesDetailComponent implements OnInit {
     this.location.back();
   }
 
+  save(): void {
+    if (this.entry) {
+      this.entryService.updateEntry(this.entry)
+        .subscribe(() => this.goBack());
+    }
+  }
+
 }
