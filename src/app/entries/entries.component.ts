@@ -21,5 +21,20 @@ export class EntriesComponent implements OnInit {
   ngOnInit(): void {
     this.getEntries();
   }
+
+  add(name: string, date: string): void {
+    name = name.trim();
+    date = date.trim();
+    if (!name || !date) { return; }
+    this.entryService.addEntry({ name, date } as Entry)
+      .subscribe(entry => {
+        this.entries.push(entry);
+      });
+  }
+
+  delete(entry: Entry): void {
+    this.entries = this.entries.filter(e => e !== entry);
+    this.entryService.deleteEntry(entry.id).subscribe();
+  }
   
 }
